@@ -1,0 +1,39 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4000083024365397801",
+      "lastPropertyId": "3:1440325682289118578",
+      "name": "LocationData",
+      "properties": [
+        {
+          "id": "1:7891133409405534372",
+          "name": "id"
+        },
+        {
+          "id": "2:2156271125740672837",
+          "indexId": "1:6081477634363913190",
+          "name": "location"
+        },
+        {
+          "id": "3:1440325682289118578",
+          "name": "weatherData"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:4000083024365397801",
+  "lastIndexId": "1:6081477634363913190",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
