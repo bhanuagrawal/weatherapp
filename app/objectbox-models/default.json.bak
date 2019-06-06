@@ -4,36 +4,44 @@
   "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
   "entities": [
     {
-      "id": "1:4000083024365397801",
-      "lastPropertyId": "3:1440325682289118578",
-      "name": "LocationData",
+      "id": "2:6914159652239517880",
+      "lastPropertyId": "3:8820937110733391516",
+      "name": "LocationWeatherData",
       "properties": [
         {
-          "id": "1:7891133409405534372",
+          "id": "1:3117058449015659036",
           "name": "id"
         },
         {
-          "id": "2:2156271125740672837",
-          "indexId": "1:6081477634363913190",
+          "id": "2:2287152868007592",
+          "indexId": "2:5989965901157809734",
           "name": "location"
         },
         {
-          "id": "3:1440325682289118578",
+          "id": "3:8820937110733391516",
           "name": "weatherData"
         }
       ],
       "relations": []
     }
   ],
-  "lastEntityId": "1:4000083024365397801",
-  "lastIndexId": "1:6081477634363913190",
+  "lastEntityId": "2:6914159652239517880",
+  "lastIndexId": "2:5989965901157809734",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
   "modelVersion": 4,
   "modelVersionParserMinimum": 4,
-  "retiredEntityUids": [],
-  "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredEntityUids": [
+    4000083024365397801
+  ],
+  "retiredIndexUids": [
+    6081477634363913190
+  ],
+  "retiredPropertyUids": [
+    7891133409405534372,
+    2156271125740672837,
+    1440325682289118578
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

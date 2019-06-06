@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "2:6914159652239517880",
-      "lastPropertyId": "3:8820937110733391516",
+      "lastPropertyId": "4:6922497582682933799",
       "name": "LocationWeatherData",
       "properties": [
         {
@@ -20,6 +20,10 @@
         {
           "id": "3:8820937110733391516",
           "name": "weatherData"
+        },
+        {
+          "id": "4:6922497582682933799",
+          "name": "lastUpdated"
         }
       ],
       "relations": []

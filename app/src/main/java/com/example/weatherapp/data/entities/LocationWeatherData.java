@@ -3,6 +3,8 @@ package com.example.weatherapp.data.entities;
 import com.example.weatherapp.data.converters.WeatherDataConverter;
 import com.example.weatherapp.data.datamodels.WeatherData;
 
+import java.util.Date;
+
 import io.objectbox.annotation.Convert;
 import io.objectbox.annotation.Entity;
 import io.objectbox.annotation.Id;
@@ -26,10 +28,15 @@ public class LocationWeatherData {
     @Convert(converter = WeatherDataConverter.class, dbType = String.class)
     public WeatherData weatherData;
 
+    public Date lastUpdated;
+
     public LocationWeatherData() {
     }
 
-    public LocationWeatherData(String location, WeatherData weatherData) {
+    public LocationWeatherData(Date lastUpdated, String location, WeatherData weatherData) {
+        this.lastUpdated = lastUpdated;
+        this.location = location;
+        this.weatherData = weatherData;
     }
 }
 

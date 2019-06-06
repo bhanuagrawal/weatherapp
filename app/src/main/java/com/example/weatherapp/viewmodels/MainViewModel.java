@@ -14,11 +14,11 @@ public class MainViewModel extends AndroidViewModel {
 
     MutableLiveData<WeatherDataRepo.STATUS> dataFetchRequestStatus;
     WeatherDataRepo weatherDataRepo;
-    MutableLiveData<WeatherData> weatherData;
 
     public MainViewModel(@NonNull Application application) {
         super(application);
         weatherDataRepo = new WeatherDataRepo(application);
+        weatherDataRepo.fetchLastUpdatedWeatherData();
     }
 
     public MutableLiveData<WeatherDataRepo.STATUS> getDataFetchRequestStatus() {
@@ -39,6 +39,6 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     public void fetchWeatherDataFromServer(String location){
-        dataFetchRequestStatus =  weatherDataRepo.fetchWeatherDataFromServer(location);
+        weatherDataRepo.fetchWeatherDataFromServer(location, getDataFetchRequestStatus());
     }
 }
